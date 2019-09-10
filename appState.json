@@ -1,0 +1,101 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "d3b69f35-56a7-4687-bb92-9b813072c0e4": {
+        "id": "d3b69f35-56a7-4687-bb92-9b813072c0e4",
+        "parent": null,
+        "name": "londonInd",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "35d028ca-28cb-4e0b-a59e-b762d43cafce"
+        ],
+        "isRemovable": false,
+        "filePath": "londonInd"
+      },
+      "35d028ca-28cb-4e0b-a59e-b762d43cafce": {
+        "id": "35d028ca-28cb-4e0b-a59e-b762d43cafce",
+        "parent": "d3b69f35-56a7-4687-bb92-9b813072c0e4",
+        "name": "lambda.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "londonInd/lambda.js",
+        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "config": {
+          "runtime": "nodejs8.10",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": [
+          {
+            "resourceName": "apigeuWest2testLonindunilqatstany",
+            "config": {}
+          }
+        ]
+      }
+    },
+    "rootNode": "d3b69f35-56a7-4687-bb92-9b813072c0e4",
+    "openFiles": [
+      "35d028ca-28cb-4e0b-a59e-b762d43cafce"
+    ],
+    "currentFileId": "35d028ca-28cb-4e0b-a59e-b762d43cafce",
+    "resources": {
+      "apigeuWest2testLonindunilqatstany": {
+        "name": "apigeuWest2testLonindunilqatstany",
+        "type": "API_GATEWAY",
+        "config": {
+          "selectedRegion": "eu-west-2",
+          "apiMode": 0,
+          "apiName": "testLon",
+          "endpointType": "REGIONAL",
+          "resourceMode": 0,
+          "resourceName": "indunil/qa/tst",
+          "resourcePath": "/indunil/qa/tst",
+          "restMethod": "ANY",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 0,
+          "stageName": "test1",
+          "mode": 0
+        }
+      }
+    },
+    "customTemplate": {
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "londonInd",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "eu-west-2",
+    "platform": "AWS",
+    "platformRegions": {},
+    "lastSave": 1568109432039
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "londonInd",
+      "url": "https://github.com/Indunil1992/londonInd"
+    }
+  }
+}
